@@ -1,0 +1,303 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat';
+}
+
+.contenedor{
+    width: 90%;
+    max-width: 1280px;
+    margin: auto;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    background: url(imagenes/portada.JPG);
+    height: 100vh;
+    background-size: cover;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header ul {
+    display: flex;
+}
+
+header ul li {
+    margin: 0 20px;
+}
+
+header ul li a {
+    color: #fff;
+}
+
+.titular{
+    text-align: center;
+    margin-top: 40vh;
+    color: #fff;
+}
+
+h1 {
+    font-size: 80px;
+    font-style: italic;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 40px;
+}
+
+.contenedor-tarjetas {
+    display: flex;
+    justify-content: center;
+}
+
+.tarjeta {
+    text-align: center;
+    box-shadow: -1px 0px 10px #0000001f;
+    width: 28%;
+    margin: 20px;
+    margin-top: -100px;
+    background: #fff;
+    padding: 40px 0;
+    border-radius: 6px ;
+}
+
+.tarjeta p{
+    font-size: 16px;
+    padding: 15px;
+    text-align: justify;
+}
+
+
+table{
+    width: 100%;
+    text-align: center;
+}
+
+#acercaDe {
+    background: rgba(104, 18, 21, 0.89);
+    padding-top: 30px;
+    padding-bottom: 50px;
+    margin-top: 30px;
+}
+
+#acercaDe .contenedor{
+    color: white;
+}
+
+#acercaDe .contenedor h2{
+    padding-top: 0;
+    font-size: 40px;
+}
+
+#acercaDe .informacion{
+    display: flex; 
+    justify-content: center; 
+    padding-bottom: 20px;
+    margin-top: 20px;
+}
+
+#acercaDe .info1{
+    width: 50%; 
+    padding-top: 40px; 
+    text-align: center; 
+}
+
+#acercaDe .dentroInfo2{
+    background-color: #bcbabaa1;
+    border-radius: 5px;
+    padding: 9px;
+}
+
+#acercaDe .info2{
+    width: 50%; 
+    padding: 0 5px 5px 5px; 
+    text-align: center;
+   
+    padding-right: 50px;
+}
+
+.gris{
+    background: #E8E8E8;
+}
+.negrita{
+    font-weight: bold;
+}
+
+.horario{
+    font-style: italic;
+}
+
+h2{
+    text-align: center;
+    font-style: italic;
+    font-size: 50px;
+    padding-top: 40px;
+}
+
+#galeria {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 1px;
+    margin-bottom: 1px;
+}
+
+#galeria img {
+    width: 100%;
+    height: 100%;
+    transition: 0.4s;
+}
+
+#galeria .foto {
+    width: 25%;
+    position: relative;
+    overflow: hidden;
+}
+
+.oculto{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #00000070;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    text-align: center;
+   
+}
+
+.oculto h4{
+    position: relative;
+    top: 30%;
+}
+
+.agrandar{
+    transform: scale(1.2);
+    transition: 0.4s;
+}
+
+#contact{
+    background: rgb(84, 8, 4);
+    text-align: center;
+    color: #fff;
+    padding: 40px 0;
+}
+
+
+
+#contact h2{
+    margin: 0;
+    padding-top: 0;
+    padding-bottom: 10px;
+}
+
+.menu-icon {
+    display: none;
+}
+
+header nav ul{
+    display: flex;
+}
+
+
+@media (max-width:800px){
+
+    .menu{
+        padding-top: 10px;
+    }
+
+    .titular{
+        margin-top: 30vh;
+    }
+    header ul{
+        flex-direction: column;
+        margin-top: 30px;
+    }
+
+    nav{
+        background: rgba(0, 0, 0, 0.568);
+        width: 93%;
+        position: absolute;
+        top: 70px;
+        left: 13px;
+        display: none;
+    }
+
+    nav ul li {
+        margin-bottom: 20px;
+
+    }
+
+    h1{
+        font-size: 34px;
+    }
+
+    h2{ 
+        font-size: 40px;
+        padding: 20px;
+    }
+
+    .contenedor-tarjetas, #galeria{
+        flex-direction: column;
+    }
+
+    .tarjeta{
+        width: 100%;
+        margin: 0;
+        margin-top: 10px;
+         
+    }
+
+    #tarjetas {
+        margin-bottom: 0;
+    }
+
+
+    #acercaDe .informacion{
+        flex-direction: column;
+        text-align: center;
+
+    }
+
+    #acercaDe .info1 {
+        width: 100% !important;
+        padding-top: 30px !important;
+       
+    }
+
+    iframe{
+        width: 320px;
+        height: 250px;
+    }
+
+    #acercaDe .info2 {
+        width: 100% !important;
+        padding-top: 5px !important;
+       
+    }
+
+    #galeria .foto{
+        width: 100%;
+    }
+
+    #contact h2{
+        font-size: 30px;
+        
+    }
+
+    .menu-icon {
+        display: block;
+    }  
+
+}
+
